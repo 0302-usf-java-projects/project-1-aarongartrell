@@ -1,8 +1,6 @@
 package com.revature.model;
 
-import java.util.Arrays;
 import java.sql.Date;
-import java.sql.Timestamp;
 
 public class Reimbursement {
 
@@ -11,13 +9,13 @@ public class Reimbursement {
   private Date reimb_submitted;
   private Date reimb_resolved;
   private String reimb_description;
-  private byte[] reimb_receipt;
+  private String reimb_receipt;
   private int reimb_author;
   private int reimb_resolver;
   private int reimb_status_id;
   private int reimb_type_id;
   public Reimbursement(int reimb_id, double reimb_amount, Date date,
-      Date date2, String reimb_description, byte b, int reimb_author,
+      Date date2, String reimb_description, String reimb_receipt, int reimb_author,
       int reimb_resolver, int reimb_status_id, int reimb_type_id) {
     super();
     
@@ -26,7 +24,7 @@ public class Reimbursement {
     this.reimb_submitted = date;
     this.reimb_resolved = date2;
     this.reimb_description = reimb_description;
-    this.reimb_receipt = b;
+    this.reimb_receipt = reimb_receipt;
     this.reimb_author = reimb_author;
     this.reimb_resolver = reimb_resolver;
     this.reimb_status_id = reimb_status_id;
@@ -78,11 +76,11 @@ public class Reimbursement {
     this.reimb_description = reimb_description;
   }
   
-  public byte[] getReimb_receipt() {
+  public String getReimb_receipt() {
     return reimb_receipt;
   }
   
-  public void setReimb_receipt(byte[] reimb_receipt) {
+  public void setReimb_receipt(String reimb_receipt) {
     this.reimb_receipt = reimb_receipt;
   }
   
@@ -123,50 +121,50 @@ public class Reimbursement {
     return "Reimbursement [reimb_id=" + reimb_id + ", reimb_amount=" + reimb_amount
         + ", reimb_submitted=" + reimb_submitted + ", reimb_resolved=" + reimb_resolved
         + ", reimb_description=" + reimb_description + ", reimb_receipt="
-        + Arrays.toString(reimb_receipt) + ", reimb_author=" + reimb_author + ", reimb_resolver="
+        + reimb_receipt + ", reimb_author=" + reimb_author + ", reimb_resolver="
         + reimb_resolver + ", reimb_status_id=" + reimb_status_id + ", reimb_type_id="
         + reimb_type_id + "]";
   }
 
-  public int getUserid() {
-    // TODO Auto-generated method stub
-    return 0;
-  }
-
-  public String getUsername() {
-    // TODO Auto-generated method stub
-    return null;
-  }
-
-  public String getPassword() {
-    // TODO Auto-generated method stub
-    return null;
-  }
-
-  public String getFirstname() {
-    // TODO Auto-generated method stub
-    return null;
-  }
-
-  public String getLastname() {
-    // TODO Auto-generated method stub
-    return null;
-  }
-
-  public String getEmail() {
-    // TODO Auto-generated method stub
-    return null;
-  }
-
-  public int getUser_role_id() {
-    // TODO Auto-generated method stub
-    return 0;
-  }
-
-  public String getErs_user_id() {
-    // TODO Auto-generated method stub
-    return null;
-  }
+//  public int getUserid() {
+//    // TODO Auto-generated method stub
+//    return 0;
+//  }
+//
+//  public String getUsername() {
+//    // TODO Auto-generated method stub
+//    return null;
+//  }
+//
+//  public String getPassword() {
+//    // TODO Auto-generated method stub
+//    return null;
+//  }
+//
+//  public String getFirstname() {
+//    // TODO Auto-generated method stub
+//    return null;
+//  }
+//
+//  public String getLastname() {
+//    // TODO Auto-generated method stub
+//    return null;
+//  }
+//
+//  public String getEmail() {
+//    // TODO Auto-generated method stub
+//    return null;
+//  }
+//
+//  public int getUser_role_id() {
+//    // TODO Auto-generated method stub
+//    return 0;
+//  }
+//
+//  public String getErs_user_id() {
+//    // TODO Auto-generated method stub
+//    return null;
+//  }
   
   
 }
