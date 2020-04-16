@@ -36,6 +36,11 @@ public class Reimbursement {
     // TODO Auto-generated constructor stub
   }
 
+//  public Reimbursement(int reimb_id2, double double1, Date date, Date date2, String string,
+//      String string, int int1, int int2, int int3, int int4) {
+//    // TODO Auto-generated constructor stub
+//  }
+
   public int getReimb_id() {
     return reimb_id;
   }
@@ -126,45 +131,45 @@ public class Reimbursement {
         + reimb_type_id + "]";
   }
 
-//  public int getUserid() {
-//    // TODO Auto-generated method stub
-//    return 0;
-//  }
-//
-//  public String getUsername() {
-//    // TODO Auto-generated method stub
-//    return null;
-//  }
-//
-//  public String getPassword() {
-//    // TODO Auto-generated method stub
-//    return null;
-//  }
-//
-//  public String getFirstname() {
-//    // TODO Auto-generated method stub
-//    return null;
-//  }
-//
-//  public String getLastname() {
-//    // TODO Auto-generated method stub
-//    return null;
-//  }
-//
-//  public String getEmail() {
-//    // TODO Auto-generated method stub
-//    return null;
-//  }
-//
-//  public int getUser_role_id() {
-//    // TODO Auto-generated method stub
-//    return 0;
-//  }
-//
-//  public String getErs_user_id() {
-//    // TODO Auto-generated method stub
-//    return null;
-//  }
+  public int getUserid() {
+    // TODO Auto-generated method stub
+    return 0;
+  }
+
+  public String getUsername() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getPassword() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getFirstname() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getLastname() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getEmail() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public int getUser_role_id() {
+    // TODO Auto-generated method stub
+    return 0;
+  }
+
+  public String getErs_user_id() {
+    // TODO Auto-generated method stub
+    return null;
+  }
   
   
 }

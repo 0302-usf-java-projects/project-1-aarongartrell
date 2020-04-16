@@ -8,8 +8,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import com.revature.model.User;
-import com.revature.exception.DuplicateUsernameException;
-import com.revature.exception.PasswordTooShortException;
 import com.revature.repository.ConnectionUtil;
 
 public class UserDao {

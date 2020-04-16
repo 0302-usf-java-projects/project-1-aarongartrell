@@ -21,7 +21,7 @@ import com.revature.repository.ConnectionUtil;
         List<Reimbursement> list = new ArrayList<>();
         while (rs.next()) {
           try {
-            list.add(new Reimbursement(0, rs.getDouble(1), rs.getDate(2), rs.getDate(3), rs.getString(4), rs.getByte(5), rs.getInt(6), rs.getInt(7), rs.getInt(8), rs.getInt(9)));
+            list.add(new Reimbursement(0, rs.getDouble(1), rs.getDate(2), rs.getDate(3), rs.getString(4), rs.getString(5), rs.getInt(6), rs.getInt(7), rs.getInt(8), rs.getInt(9)));
           } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -75,21 +75,23 @@ import com.revature.repository.ConnectionUtil;
     }
     
   }
+    
+  
 
 
-   // public boolean update(Reimbursement t) {
-     // try (Connection conn = ConnectionUtil.connect()) {
-       // String sql = "update accounts set balance = ? where username = ?";
-        //PreparedStatement ps = conn.prepareStatement(sql);
-        //ps.setDouble(1, d);
-        //ps.setString(2, t.getUsername());
-        //ps.execute();
-        //return true;
-      //} catch (SQLException e) {
-        //e.printStackTrace();
-      //}
-     // return false;
-    //}
-  //}
+//    public boolean update(Reimbursement t) {
+//      try (Connection conn = ConnectionUtil.connect()) {
+//        String sql = "update accounts set balance = ? where username = ?";
+//        PreparedStatement ps = conn.prepareStatement(sql);
+//        ps.setDouble(1, d);
+//        ps.setString(2, t.getUsername());
+//        ps.execute();
+//        return true;
+//      } catch (SQLException e) {
+//        e.printStackTrace();
+//      }
+//      return false;
+//    }
+//  }
   
 
